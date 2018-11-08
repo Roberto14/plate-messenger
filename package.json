@@ -1,5 +1,5 @@
 {
-  "name": "RNFirebaseStarter",
+  "name": "PlateMessenger",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
@@ -12,11 +12,13 @@
   },
   "scripts": {
     "android": "react-native run-android",
+    "cleanup": "rm -rf node_modules && yarn",
     "ios": "react-native run-ios",
     "apk": "cd android && ./gradlew assembleRelease",
     "rename": "node ./bin/rename.js",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "link": "react-native link"
   },
   "jest": {
     "preset": "react-native"
@@ -24,6 +26,8 @@
   "dependencies": {
     "react": "16.5.0",
     "react-native": "0.57.1",
-    "react-native-firebase": "^5.0.0"
+    "react-native-firebase": "^5.0.0",
+    "react-native-google-signin": "^1.0.0-rc6",
+    "react-navigation": "^2.18.0"
   }
 }
